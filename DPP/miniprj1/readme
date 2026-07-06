@@ -1,0 +1,601 @@
+Data Preprocessing:
+
+1. Program Purpose
+The program connects:
+ Data Quality
+ Data Cleaning
+ Data Transformation
+ Data Reduction
+ Proximity Measures and Machine Learning
+
+The program reads the ecommerce email marketing dataset, checks problems, fixes them, demonstrates distance/proximity measures, trains ML models, and saves CSV reports.
+
+2. Importing Libraries
+import os
+import re
+import time
+import warnings
+from pathlib import Path
+
+import numpy as np
+import pandas as pd
+Meaning
+These are basic utility libraries.
+
+os checks whether file paths exist.
+time measures model training time.
+Path creates output folders.
+numpy handles numerical operations.
+pandas handles the dataset.
+
+The ML libraries include models, preprocessing tools, pipelines, train-test split, and performance metrics.
+
+3. File Path Configuration
+DATA_PATH = r"D:\dataset\bits\ecommerce_email_marketing_dataset.csv"
+OUTPUT_FOLDER = r"D:\dataset\bits"
+What it does
+This tells Python where the dataset is stored and where the output files should be saved.
+
+Example:
+
+D:\dataset\bits\ecommerce_email_marketing_dataset.csv
+If the file is not found in Windows, the script uses /mnt/data/... as a fallback for testing.
+
+4. Target Column
+TARGET_COLUMN = "purchased"
+Meaning
+The model is trying to predict whether a customer purchased or not.
+
+Example:
+
+customer	purchased
+C001	Yes
+C002	No
+This is a classification problem.
+
+Important Functions Used in the Code
+5. add_report() Function
+def add_report(theory_week, problem, columns, before, after, action_taken):
+What this function does
+This function records every preprocessing action in a validation report.
+
+It stores:
+Problem	Missing values, duplicate rows, outliers, etc.
+Columns Checked	Which columns were checked
+Before	Problem count before fixing
+After	Problem count after fixing
+Action Taken	What was done
+
+Example:
+Problem: Duplicate records
+Before: 143
+After: 0
+Action Taken: Removed duplicate rows
+This is later saved as week7_preprocessing_validation_report.csv.
+
+6. clean_column_names() Function
+def clean_column_names(dataframe):
+What it does
+This function standardizes column names.
+
+It performs:
+.str.strip()
+.str.lower()
+.str.replace(" ", "_")
+.str.replace(r"[^a-z0-9_]", "")
+
+Example
+Before:
+Customer ID
+Open Rate
+Last Purchase Days
+
+After:
+customer_id
+open_rate
+last_purchase_days
+
+Why this is important
+Without this, Python code becomes difficult because Open Rate, openrate, and OpenRate may be treated differently.
+
+7. find_existing_columns() Function
+def find_existing_columns(dataframe, possible_names):
+What it does
+This function checks which column names exist in the dataset.
+
+Example:
+
+find_existing_columns(df, ["openrate", "open_rate", "email_open_rate"])
+If the dataset contains open_rate, it returns:
+["open_rate"]
+
+Why this is useful
+Different datasets may use different column names. This makes the program flexible.
+
+8. make_onehot_encoder() Function
+def make_onehot_encoder():
+What it does
+This creates a OneHotEncoder.
+
+One-hot encoding converts categorical values into numeric columns.
+
+Example:
+
+device_type
+Mobile
+Desktop
+Becomes:
+
+device_type_Mobile	device_type_Desktop
+1	0
+0	1
+The function also handles different scikit-learn versions. Some versions use sparse_output=False, older versions use sparse=False.
+
+Main Program Flow
+9. Load Dataset
+df = pd.read_csv(DATA_PATH)
+What it does
+Reads the CSV file into a pandas DataFrame.
+
+It also prints:
+
+Original shape
+Original columns
+Example:
+
+Original shape: (10000, 20)
+That means 10,000 rows and 20 columns.
+
+10. Standardize Column Names
+df = clean_column_names(df)
+Example
+Before:
+
+Email Provider
+Campaign Type
+After:
+
+email_provider
+campaign_type
+Then the code adds this action to the validation report using add_report().
+
+11. Handle Empty Strings and Text Missing Values
+df = df.replace(r"^\s*$", np.nan, regex=True)
+df = df.replace(["Unknown", "NA", "null", "None"], np.nan)
+What it does
+Converts fake missing values into real missing values.
+
+Example:
+
+income
+50000
+Unknown
+70000
+Becomes:
+
+income
+50000
+NaN
+NaN
+70000
+This allows proper imputation later.
+
+12. Remove Duplicate Rows
+df = df.drop_duplicates().reset_index(drop=True)
+What it does
+Removes repeated rows.
+
+Example:
+
+customer_id	email
+C001	a@gmail.com
+C001	a@gmail.com
+Only one row remains.
+
+Duplicates can bias the model because the same customer is counted more than once.
+
+13. Remove Extra Spaces
+df[col] = df[col].astype(str).str.strip()
+What it does
+Removes leading and trailing spaces from text columns.
+
+Example:
+
+" Hyderabad "
+becomes:
+
+"Hyderabad"
+Without this, Python treats "Hyderabad" and " Hyderabad " as different cities.
+
+14. Standardize Mixed Letter Cases
+df[col] = df[col].str.lower()
+or
+
+df[col] = df[col].str.title()
+Example
+Email provider:
+
+GMAIL, Gmail, gmail
+becomes:
+
+gmail
+Campaign type or city:
+
+hyderabad
+becomes:
+
+Hyderabad
+This reduces fake categories.
+
+15. Clean Gender Values
+def clean_gender(value):
+What it does
+Maps multiple gender formats into standard categories.
+
+Example:
+
+m, male, Male, MAN
+becomes:
+
+Male
+f, female, Female, WOMAN
+becomes:
+
+Female
+Unknown values become NaN.
+
+16. Validate Email Format
+email_regex = r"^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$"
+What it does
+Checks whether emails are valid.
+
+Example:
+
+email	is_valid_email	email_domain
+raj@gmail.com	1	gmail.com
+raj@gmail	0	invalid_email
+The code creates two new columns:
+
+is_valid_email
+email_domain
+This converts messy email data into useful features.
+
+17. Convert Numeric Columns
+df[col] = pd.to_numeric(df[col], errors="coerce")
+What it does
+Converts numeric-looking columns into actual numbers.
+
+Example:
+
+income
+50000
+Unknown
+70000
+After conversion:
+
+income
+50000
+NaN
+70000
+Invalid text becomes NaN.
+
+18. Fix Invalid Numeric Values
+The code checks:
+
+age < 0 or age > 100
+open_rate < 0 or open_rate > 1
+income < 0
+total_spent < 0
+Example
+age
+35
+-5
+150
+After cleaning:
+
+age
+35
+NaN
+NaN
+These invalid values are later filled using imputation.
+
+19. Convert Date Columns
+df[col] = pd.to_datetime(df[col], errors="coerce", dayfirst=True)
+What it does
+Converts date text into date format.
+
+Then it creates:
+
+year
+month
+dayofweek
+days_since_date
+Example:
+
+signup_date = 15-01-2023
+becomes:
+
+signup_date_year = 2023
+signup_date_month = 1
+signup_date_dayofweek = 6
+days_since_signup_date = 900
+Machine learning cannot directly understand dates, but it can use numerical features extracted from dates.
+
+20. Clean Email Subject Text
+.str.lower()
+.str.replace(r"[^a-z0-9\s]", "")
+What it does
+Removes symbols and punctuation from email subject lines.
+
+Example:
+🔥 Huge SALE!!! 70% OFF ###
+
+becomes:
+huge sale 70 off
+
+Then it creates:
+email_subject_length
+email_subject_word_count
+These become numerical text features.
+
+21. Convert Boolean Text to Numbers
+yes -> 1
+no -> 0
+true -> 1
+false -> 0
+Example
+subscribed
+Yes
+No
+Yes
+becomes:
+
+subscribed
+1
+0
+1
+ML models require numerical input.
+
+22. Treat Outliers Using IQR
+q1 = df[col].quantile(0.25)
+q3 = df[col].quantile(0.75)
+iqr = q3 - q1
+lower = q1 - 1.5 * iqr
+upper = q3 + 1.5 * iqr
+df[col] = df[col].clip(lower=lower, upper=upper)
+What it does
+Caps extremely high or low values.
+
+Example:
+
+income
+45000
+52000
+61000
+9000000
+The value 9000000 may be capped to the calculated upper limit.
+
+This prevents extreme values from dominating the model.
+
+23. Create Log-Transformed Features
+df[f"{col}_log1p"] = np.log1p(df[col])
+What it does
+Creates a new transformed version of skewed columns like income or total spending.
+
+Example:
+
+income = 1000000
+After log transformation:
+
+income_log1p = log(1000001)
+This reduces skewness and makes values less extreme.
+
+24. Drop High-Cardinality and Irrelevant Columns
+customer_id
+customer_name
+email
+are dropped.
+
+Why?
+customer_id is only an identifier.
+email is usually unique for every row.
+These columns do not generalize well for ML.
+
+However, useful information like email_domain and is_valid_email is kept.
+
+25. Drop Leakage Columns
+purchased_amount
+is dropped.
+
+Why?
+If we are predicting whether a customer purchased, the purchase amount may directly reveal the answer.
+
+Example:
+
+purchased	purchased_amount
+Yes	2500
+No	0
+This would make the model unrealistically accurate.
+
+26. Remove Highly Correlated Features
+corr_matrix = numeric_df_for_corr.corr().abs()
+What it does
+Finds features with correlation greater than 0.95.
+
+Example:
+
+open_rate and click_rate correlation = 0.98
+One of them may be removed because both provide almost the same information.
+
+This is data reduction.
+
+27. Clean Target Variable
+yes -> 1
+no -> 0
+The target column purchased is converted to numeric.
+
+Rows with missing target values are removed because supervised ML needs a known answer.
+
+28. Check Class Imbalance
+df[TARGET_COLUMN].value_counts(normalize=True)
+Example
+0 = 85%
+1 = 15%
+This means most customers did not purchase.
+
+The code handles this by using:
+
+stratify=y
+class_weight="balanced"
+This makes training more fair.
+
+29. Separate Features and Target
+X = df.drop(columns=[TARGET_COLUMN])
+y = df[TARGET_COLUMN]
+Meaning
+X contains input variables:
+
+age, income, city, device_type, open_rate
+y contains the answer:
+
+purchased
+Then the code separates numeric and categorical columns.
+
+30. Build the Preprocessing Pipeline
+Numeric Pipeline
+numeric_transformer = Pipeline([
+    ("imputer", SimpleImputer(strategy="median")),
+    ("scaler", StandardScaler())
+])
+It does two things:
+
+Missing numeric values are filled with median.
+
+Example:
+
+income = NaN
+becomes:
+
+income = median income
+Then scaling is applied.
+
+Example:
+
+income = 100000
+age = 35
+open_rate = 0.25
+Scaling makes them comparable.
+
+Categorical Pipeline
+categorical_transformer = Pipeline([
+    ("imputer", SimpleImputer(strategy="most_frequent")),
+    ("encoder", OneHotEncoder())
+])
+It fills missing categorical values with the most common value and converts categories into numeric columns.
+
+Example:
+
+device_type = Mobile
+becomes:
+
+device_type_Mobile = 1
+device_type_Desktop = 0
+The ColumnTransformer applies numeric treatment to numeric columns and categorical treatment to categorical columns.
+
+31. Week 7 Proximity Measures Demo
+The code chooses numeric features such as:
+
+age
+income
+open_rate
+click_rate
+It compares two customers using:
+
+Euclidean distance
+Manhattan distance
+Cosine similarity
+Why scaling matters
+Before scaling:
+
+income = 120000
+age = 35
+open_rate = 0.25
+Income dominates the distance calculation because it has very large values.
+
+After scaling:
+
+income, age, open_rate
+come to comparable scale.
+
+This is very important for KNN because KNN depends on distance.
+
+32. Train-Test Split
+train_test_split(
+    X,
+    y,
+    test_size=0.20,
+    random_state=42,
+    stratify=y
+)
+What it does
+Splits data into:
+
+80% training data
+20% testing data
+stratify=y keeps the same purchased/not-purchased ratio in both train and test data.
+
+33. Define Machine Learning Models
+The code uses five models:
+
+Logistic Regression
+Decision Tree
+Random Forest
+Gradient Boosting
+K-Nearest Neighbors
+At least four were required, and the code uses five.
+
+34. Train, Time, and Evaluate Models
+For every model:
+
+pipeline = Pipeline([
+    ("preprocessing", preprocessor),
+    ("model", model)
+])
+Meaning
+Each model first gets the same preprocessing treatment, then it is trained.
+
+Training time is measured using:
+
+start_time = time.perf_counter()
+pipeline.fit(X_train, y_train)
+end_time = time.perf_counter()
+Accuracy is calculated using:
+
+accuracy_score(y_test, y_pred)
+The program also calculates:
+
+Precision
+Recall
+F1 Score
+ROC AUC
+True Positive
+True Negative
+False Positive
+False Negative
+This gives a more complete performance comparison than accuracy alone.
+
+35. Save Output Files
+The program saves four output files:
+
+week7_preprocessing_validation_report.csv
+week7_model_results_after_preprocessing.csv
+week7_proximity_measures_demo.csv
+week7_cleaned_ecommerce_dataset.csv
+
+Learning Objectives:
+ What problems existed
+ What preprocessing fixed them
+ How proximity measures changed after scaling
+ Which model performed best
+ How much time each model took
+
