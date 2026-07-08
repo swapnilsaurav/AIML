@@ -1,0 +1,112 @@
+Practical Coding Assignment
+End-to-End Data Preprocessing for House Price Prediction
+Maximum Marks: 40
+Submission:
+•	Jupyter Notebook (.ipynb) 
+•	Python Script (.py) 
+•	PDF Report (Maximum 5 pages) 
+
+Objective
+The objective of this assignment is to apply all the data preprocessing techniques covered up to Week 7 to prepare a housing dataset for machine learning. Students are expected to clean, transform, encode, engineer features, and prepare a final dataset suitable for predictive analytics.
+Business Scenario
+A real estate company wants to build a machine learning model to predict house prices. Before model development, the collected housing dataset must be cleaned and transformed because it contains missing values, inconsistent categorical values, duplicate records, skewed numerical features, and attributes measured on different scales. As a Data Scientist, your responsibility is to prepare the dataset for model development.
+Dataset
+Location: https://github.com/swapnilsaurav/Dataset/blob/master/HousePrice_DPP_Ex_1.xlsx
+
+Task 1 – Data Exploration (5 Marks)
+Using Python,
+•	Load the dataset. 
+•	Display the first and last five records. 
+•	Display dataset dimensions. 
+•	Display data types. 
+•	Generate descriptive statistics. 
+•	Identify missing values. 
+•	Count duplicate records. 
+
+Task 2 – Data Quality Assessment (5 Marks)
+Identify the following problems (if present):
+•	Missing values 
+•	Duplicate records 
+•	Incorrect data types 
+•	Invalid values 
+•	Outliers 
+•	Inconsistent categorical values 
+•	Extra spaces 
+•	Mixed letter cases 
+
+Create a summary table showing:
+Problem 	Affected Column(s) 	Suggested Solution 
+		
+		
+
+Task 3 – Data Cleaning (8 Marks)
+Perform the following preprocessing tasks.
+•	Remove duplicate records. 
+•	Handle missing values using appropriate techniques. 
+•	Correct inconsistent categorical values. 
+•	Remove extra spaces. 
+•	Standardize letter cases. 
+•	Convert incorrect data types. 
+•	Handle invalid numerical values. 
+Provide comments in your code explaining every preprocessing step.
+
+Task 4 – Data Transformation and Scaling (6 Marks)
+Perform the following preprocessing tasks.
+Part A (3 Marks)
+Apply any two transformations from the following:
+•	Log Transformation 
+•	Square Root Transformation 
+•	Binning 
+•	Reciprocal Transformation 
+Explain why the selected transformation is appropriate.
+
+Part B (3 Marks)
+Apply:
+•	Min-Max Scaling 
+•	Standardization 
+on numerical attributes.
+Compare the transformed results.
+
+Task 5 – Feature Engineering (6 Marks)
+Create at least five new features that could improve house price prediction.
+Examples:
+•	Price per Square Foot 
+•	House Age Category 
+•	Luxury House Flag 
+•	Total Rooms 
+•	Property Size Category 
+•	Distance Category 
+•	Premium Location Flag 
+Explain the importance of each engineered feature.
+
+Task 6 – Categorical Encoding (4 Marks)
+Identify categorical variables.
+Select suitable encoding techniques for each.
+Possible techniques:
+•	One-Hot Encoding 
+•	Label Encoding 
+•	Ordinal Encoding 
+Explain why the chosen encoding is appropriate.
+
+Task 7 – Final Preprocessed Dataset (3 Marks)
+Generate the final cleaned dataset.
+Display:
+•	Final dataset dimensions 
+•	Remaining missing values 
+•	Remaining duplicate records 
+•	Data types 
+•	First five rows 
+
+Save the dataset as:
+HousePrice_Preprocessed.csv
+
+Reflection Questions (3 Marks)
+Answer the following.
+Q1. Which preprocessing technique had the greatest impact on improving the dataset quality?
+Q2. Which newly engineered feature do you expect to contribute most toward accurate house price prediction?
+Q3. Explain why preprocessing should always be completed before building a machine learning model.
+Note: If any of these section is not relevant here, please do mark it clearly and why you think so.
+End of the Assignment
+
+
+
