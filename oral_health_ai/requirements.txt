@@ -1,0 +1,9 @@
+tensorflow
+streamlit
+numpy
+pillow
+matplotlib
+scikit-learn
+
+
+Dataset Link: https://drive.google.com/file/d/13NFWEqtL_3Vxsr02ehXoYTapp63dMIDM/view?usp=drive_link
