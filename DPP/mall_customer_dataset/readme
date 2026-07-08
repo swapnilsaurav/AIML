@@ -1,0 +1,19 @@
+Mall Customer Preprocessing Dataset
+Rows: 2200, Columns: 25
+
+Purpose: Practical coding assignment for Data Preprocessing up to Week 7.
+
+Included problems/opportunities:
+- Missing values in Age, AnnualIncome_INR, LastPurchaseDate, AvgBasketValue_INR, TotalPurchases, Gender, EmailProvider, DeviceType, ChurnNextMonth.
+- Duplicate rows and duplicate CustomerID with conflicting values.
+- Inconsistent categorical values: Gender, MembershipTier, City, Country, PreferredCategory, DeviceType, PaymentMethod, CouponUsed.
+- Extra spaces and mixed case in CustomerName, City, Country, MembershipTier, PaymentMethod.
+- Invalid values: negative age, age > 120, invalid dates, negative basket value, negative purchases, satisfaction > 5, negative loyalty points.
+- Outliers: very high income, high basket value, high total purchases, high loyalty points.
+- Transformation opportunities: scaling AnnualIncome_INR, AvgBasketValue_INR, LoyaltyPoints, purchase counts; encoding categorical variables; date parsing.
+- Reduction opportunities: attribute subset selection, correlation filtering, PCA after encoding/scaling, sampling.
+- Proximity opportunities: customer similarity using numeric features and/or mixed categorical features.
+
+Suggested target column: ChurnNextMonth.
+Dataset:
+https://github.com/swapnilsaurav/Dataset/blob/master/mall_customer_preprocessing_dataset.csv
