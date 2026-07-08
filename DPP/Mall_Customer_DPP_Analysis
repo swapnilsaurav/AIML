@@ -15,3 +15,6 @@ Included problems/opportunities:
 - Proximity opportunities: customer similarity using numeric features and/or mixed categorical features.
 
 Suggested target column: ChurnNextMonth.
+Dataset:
+https://github.com/swapnilsaurav/Dataset/blob/master/mall_customer_preprocessing_dataset.csv
+
