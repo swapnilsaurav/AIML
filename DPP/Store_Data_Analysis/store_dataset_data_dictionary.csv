@@ -1,0 +1,61 @@
+Column,Data_Type,Purpose_or_Notes
+Store_ID,Categorical / identifier,Raw modelling or descriptive feature
+Transaction_ID,Categorical / identifier,Identifier; normally remove before modelling
+Transaction_Date,Date,Raw modelling or descriptive feature
+Store_Type,Categorical / identifier,Raw modelling or descriptive feature
+Store_Size_SqFt,Integer / numeric,Raw modelling or descriptive feature
+Store_Age_Years,Integer / numeric,Raw modelling or descriptive feature
+City_Tier,Categorical / identifier,Raw modelling or descriptive feature
+State,Categorical / identifier,Raw modelling or descriptive feature
+Region,Categorical / identifier,Raw modelling or descriptive feature
+Urban_Rural,Categorical / identifier,Raw modelling or descriptive feature
+Customer_ID,Categorical / identifier,High-cardinality identifier; normally remove or aggregate
+Customer_Age,Integer / numeric,Raw modelling or descriptive feature
+Customer_Gender,Categorical / identifier,Raw modelling or descriptive feature
+Customer_Segment,Categorical / identifier,Raw modelling or descriptive feature
+Loyalty_Member,Categorical / identifier,Raw modelling or descriptive feature
+Membership_Years,Continuous numeric,Raw modelling or descriptive feature
+Product_ID,Categorical / identifier,High-cardinality identifier; normally remove or encode carefully
+Product_Category,Categorical / identifier,Raw modelling or descriptive feature
+Product_Subcategory,Categorical / identifier,Raw modelling or descriptive feature
+Brand_Tier,Categorical / identifier,Raw modelling or descriptive feature
+Unit_Price,Continuous numeric,Raw modelling or descriptive feature
+Unit_Cost,Continuous numeric,Raw modelling or descriptive feature
+Quantity,Integer / numeric,Raw modelling or descriptive feature
+Discount_Pct,Continuous numeric,Raw modelling or descriptive feature
+Tax_Pct,Continuous numeric,Raw modelling or descriptive feature
+Payment_Method,Categorical / identifier,Raw modelling or descriptive feature
+Promotion_Type,Categorical / identifier,Raw modelling or descriptive feature
+Promotion_Active,Categorical / identifier,Raw modelling or descriptive feature
+Competitor_Price,Continuous numeric,Raw modelling or descriptive feature
+Inventory_Before,Integer / numeric,Raw modelling or descriptive feature
+Inventory_After,Integer / numeric,Raw modelling or descriptive feature
+Reorder_Level,Integer / numeric,Raw modelling or descriptive feature
+Supplier_Lead_Time_Days,Integer / numeric,Raw modelling or descriptive feature
+Supplier_Rating,Continuous numeric,Raw modelling or descriptive feature
+Employee_Count,Integer / numeric,Raw modelling or descriptive feature
+Staff_Experience_Avg,Continuous numeric,Raw modelling or descriptive feature
+Footfall_Daily,Integer / numeric,Raw modelling or descriptive feature
+Conversion_Rate,Continuous numeric,Raw modelling or descriptive feature
+Online_Order,Categorical / identifier,Raw modelling or descriptive feature
+Delivery_Distance_Km,Continuous numeric,Structurally blank for offline purchases; some additional missing values.
+Delivery_Time_Min,Integer / numeric,Structurally blank for offline purchases; some additional missing values.
+Weather,Categorical / identifier,Raw modelling or descriptive feature
+Temperature_C,Continuous numeric,Raw modelling or descriptive feature
+Holiday_Flag,Categorical / identifier,Raw modelling or descriptive feature
+Weekend_Flag,Categorical / identifier,Raw modelling or descriptive feature
+Month,Integer / numeric,Raw modelling or descriptive feature
+Quarter,Categorical / identifier,Raw modelling or descriptive feature
+Days_Since_Last_Purchase,Integer / numeric,Raw modelling or descriptive feature
+Customer_Satisfaction,Continuous numeric,Raw modelling or descriptive feature
+Return_Flag,Categorical / identifier,Suggested classification target
+Return_Reason,Categorical / identifier,Structurally blank when Return_Flag is No.
+Sales_Revenue,Continuous numeric,Suggested regression target
+Gross_Profit,Continuous numeric,Derived from revenue and cost; leakage if predicting Sales_Revenue
+Profit_Margin_Pct,Continuous numeric,Engineered feature; potential leakage depending on target
+Revenue_Per_SqFt,Continuous numeric,Engineered feature; potential leakage if predicting Sales_Revenue
+Price_Gap_Competitor,Continuous numeric,Engineered from Competitor_Price - Unit_Price
+Inventory_Turnover_Proxy,Continuous numeric,Engineered from Quantity / Inventory_Before
+Random_Noise_1,Continuous numeric,Weak/noise feature; expected candidate for removal
+Random_Noise_2,Integer / numeric,Weak/noise feature; expected candidate for removal
+Unrelated_Code,Categorical / identifier,Irrelevant categorical feature; expected candidate for removal
