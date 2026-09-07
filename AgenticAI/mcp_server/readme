@@ -1,0 +1,2 @@
+Your Python MCP server exposes these tools
+pip install -q -U "mcp[cli]>=2"
