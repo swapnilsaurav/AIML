@@ -7530,7 +7530,7 @@ Balancing the dateset: Before we train the model, make sure all the classes have
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Libraries</span>
@@ -7560,7 +7560,7 @@ Balancing the dateset: Before we train the model, make sure all the classes have
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#load the dataset</span>
@@ -7649,7 +7649,7 @@ This is Imbalanced Dataset, since the % distribution is different.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">"target"</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -7691,7 +7691,7 @@ Name: proportion, dtype: float64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Method 1: OverSampling using RandomOverSampler</span>
@@ -7733,7 +7733,7 @@ Name: proportion, dtype: float64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Method 2: UnderSampling using RandomUnderSampler</span>
@@ -7775,7 +7775,7 @@ Name: proportion, dtype: float64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Method 3: OverSampling using SMOTE</span>
@@ -7817,7 +7817,7 @@ Name: proportion, dtype: float64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Now the dataset is balanced, we can move ahead with model building</span>
@@ -7835,7 +7835,7 @@ Name: proportion, dtype: float64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># MODEL 1: LOGISTIC REGRESSION</span>
@@ -7854,6 +7854,7 @@ Name: proportion, dtype: float64
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Test data precision: "</span><span class="p">,</span><span class="n">precision_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">y_pred_test</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Test data recall: "</span><span class="p">,</span><span class="n">recall_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">y_pred_test</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Test data F1 Score: "</span><span class="p">,</span><span class="n">f1_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">y_pred_test</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Test data roc_auc_score: "</span><span class="p">,</span><span class="n">roc_auc_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">y_pred_test</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Test data classification report: </span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">y_pred_test</span><span class="p">))</span>
 </pre></div>
 </div>
@@ -7867,24 +7868,25 @@ Name: proportion, dtype: float64
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Training data accuracy:  0.9822695035460993
+<pre>Training data accuracy:  0.9875886524822695
 
  CONFUSION MATRIX - Test Data:
  [[39  0]
- [13 62]]
-Test data accuracy:  0.8859649122807017
+ [12 63]]
+Test data accuracy:  0.8947368421052632
 Test data precision:  1.0
-Test data recall:  0.8266666666666667
-Test data F1 Score:  0.9051094890510949
+Test data recall:  0.84
+Test data F1 Score:  0.9130434782608695
+Test data roc_auc_score:  0.9199999999999999
 Test data classification report: 
                precision    recall  f1-score   support
 
-           0       0.75      1.00      0.86        39
-           1       1.00      0.83      0.91        75
+           0       0.76      1.00      0.87        39
+           1       1.00      0.84      0.91        75
 
     accuracy                           0.89       114
-   macro avg       0.88      0.91      0.88       114
-weighted avg       0.91      0.89      0.89       114
+   macro avg       0.88      0.92      0.89       114
+weighted avg       0.92      0.89      0.90       114
 
 </pre>
 </div>
@@ -7896,7 +7898,7 @@ weighted avg       0.91      0.89      0.89       114
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># MODEL 2: K NEAREST NEIGHBORS</span>
@@ -7915,6 +7917,7 @@ weighted avg       0.91      0.89      0.89       114
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Test data precision: "</span><span class="p">,</span><span class="n">precision_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">y_pred_test</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Test data recall: "</span><span class="p">,</span><span class="n">recall_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">y_pred_test</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Test data F1 Score: "</span><span class="p">,</span><span class="n">f1_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">y_pred_test</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Test data roc_auc_score: "</span><span class="p">,</span><span class="n">roc_auc_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">y_pred_test</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Test data classification report: </span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">y_pred_test</span><span class="p">))</span>
 
 <span class="c1">#Fine tuning KNN method</span>
@@ -7939,31 +7942,32 @@ weighted avg       0.91      0.89      0.89       114
 
  CONFUSION MATRIX - Test Data:
  [[39  0]
- [10 65]]
-Test data accuracy:  0.9122807017543859
+ [11 64]]
+Test data accuracy:  0.9035087719298246
 Test data precision:  1.0
-Test data recall:  0.8666666666666667
-Test data F1 Score:  0.9285714285714286
+Test data recall:  0.8533333333333334
+Test data F1 Score:  0.920863309352518
+Test data roc_auc_score:  0.9266666666666667
 Test data classification report: 
                precision    recall  f1-score   support
 
-           0       0.80      1.00      0.89        39
-           1       1.00      0.87      0.93        75
+           0       0.78      1.00      0.88        39
+           1       1.00      0.85      0.92        75
 
-    accuracy                           0.91       114
-   macro avg       0.90      0.93      0.91       114
-weighted avg       0.93      0.91      0.91       114
+    accuracy                           0.90       114
+   macro avg       0.89      0.93      0.90       114
+weighted avg       0.92      0.90      0.91       114
 
 Test data accuracy for 1 :  0.9035087719298246
-Test data accuracy for 3 :  0.8859649122807017
-Test data accuracy for 5 :  0.9035087719298246
-Test data accuracy for 7 :  0.9035087719298246
-Test data accuracy for 9 :  0.9035087719298246
-Test data accuracy for 11 :  0.9122807017543859
-Test data accuracy for 13 :  0.9122807017543859
-Test data accuracy for 15 :  0.9122807017543859
-Test data accuracy for 17 :  0.9035087719298246
-Test data accuracy for 19 :  0.9035087719298246
+Test data accuracy for 3 :  0.9035087719298246
+Test data accuracy for 5 :  0.8859649122807017
+Test data accuracy for 7 :  0.8947368421052632
+Test data accuracy for 9 :  0.8947368421052632
+Test data accuracy for 11 :  0.9035087719298246
+Test data accuracy for 13 :  0.8947368421052632
+Test data accuracy for 15 :  0.8947368421052632
+Test data accuracy for 17 :  0.8947368421052632
+Test data accuracy for 19 :  0.8947368421052632
 </pre>
 </div>
 </div>
@@ -7974,7 +7978,7 @@ Test data accuracy for 19 :  0.9035087719298246
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># MODEL 3: DECISION TREE CLASSIFIER</span>
@@ -7993,6 +7997,7 @@ Test data accuracy for 19 :  0.9035087719298246
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Test data precision: "</span><span class="p">,</span><span class="n">precision_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">y_pred_test</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Test data recall: "</span><span class="p">,</span><span class="n">recall_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">y_pred_test</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Test data F1 Score: "</span><span class="p">,</span><span class="n">f1_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">y_pred_test</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Test data roc_auc_score: "</span><span class="p">,</span><span class="n">roc_auc_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">y_pred_test</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Test data classification report: </span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">y_pred_test</span><span class="p">))</span>
 </pre></div>
 </div>
@@ -8009,21 +8014,22 @@ Test data accuracy for 19 :  0.9035087719298246
 <pre>Training data accuracy:  1.0
 
  CONFUSION MATRIX - Test Data:
- [[39  0]
+ [[37  2]
  [16 59]]
-Test data accuracy:  0.8596491228070176
-Test data precision:  1.0
+Test data accuracy:  0.8421052631578947
+Test data precision:  0.9672131147540983
 Test data recall:  0.7866666666666666
-Test data F1 Score:  0.8805970149253731
+Test data F1 Score:  0.8676470588235294
+Test data roc_auc_score:  0.8676923076923075
 Test data classification report: 
                precision    recall  f1-score   support
 
-           0       0.71      1.00      0.83        39
-           1       1.00      0.79      0.88        75
+           0       0.70      0.95      0.80        39
+           1       0.97      0.79      0.87        75
 
-    accuracy                           0.86       114
-   macro avg       0.85      0.89      0.86       114
-weighted avg       0.90      0.86      0.86       114
+    accuracy                           0.84       114
+   macro avg       0.83      0.87      0.84       114
+weighted avg       0.88      0.84      0.85       114
 
 </pre>
 </div>
@@ -8035,7 +8041,7 @@ weighted avg       0.90      0.86      0.86       114
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># MODEL 4: RANDOM TREE CLASSIFIER</span>
@@ -8054,6 +8060,7 @@ weighted avg       0.90      0.86      0.86       114
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Test data precision: "</span><span class="p">,</span><span class="n">precision_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">y_pred_test</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Test data recall: "</span><span class="p">,</span><span class="n">recall_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">y_pred_test</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Test data F1 Score: "</span><span class="p">,</span><span class="n">f1_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">y_pred_test</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Test data roc_auc_score: "</span><span class="p">,</span><span class="n">roc_auc_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">y_pred_test</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Test data classification report: </span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">y_pred_test</span><span class="p">))</span>
 </pre></div>
 </div>
@@ -8076,6 +8083,7 @@ Test data accuracy:  0.9210526315789473
 Test data precision:  1.0
 Test data recall:  0.88
 Test data F1 Score:  0.9361702127659575
+Test data roc_auc_score:  0.94
 Test data classification report: 
                precision    recall  f1-score   support
 
