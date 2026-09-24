@@ -1,0 +1,366 @@
+Prompt Engineering 
+-------------------------------
+R-C-T-D-O
+R — Role: Who should AI act as?C — Context: What is happening?T — Task: What should it do?D — Data: What information should it use?O — Output: How should the answer be presented?
+
+ROLE
+You are a senior supply chain analyst.
+
+CONTEXT
+Our OTIF has declined from 96% to 89% while
+inventory increased from ₹82 Cr to ₹100 Cr.
+
+DATA
+Forecast accuracy: 74%
+Stockout rate: 8.7%
+Supplier OTD: 84%
+Supplier lead time: 24 days vs 18 days earlier.
+
+TASK
+Analyze the situation and identify the likely drivers.
+
+OUTPUT
+Provide:
+1. Top 3 observations
+2. Possible root causes
+3. Additional data needed
+4. Three management actions
+5. KPIs to monitor
+
+Do not invent missing information.
+Clearly distinguish facts from hypotheses.
+
+------------------------
+Control Tower Copilot. Based on NovaTech dataset. Did AI solve the problem? Not really. It generated hypotheses. We need data to verify them.
+
+
+You are the Supply Chain Analytics Manager for NovaTech Manufacturing.
+
+The COO has provided the following information:
+
+Revenue: ₹940 Cr, up from ₹820 Cr
+OTIF: 89%, down from 96%
+Inventory: ₹100 Cr, up from ₹82 Cr
+Stockout rate: 8.7%, up from 4.2%
+Forecast accuracy: 74%, down from 82%
+Supplier lead time: 24 days, up from 18 days
+Supplier OTD: 84%
+
+Analyze this situation.
+
+Identify:
+- What is going wrong
+- Possible causes
+- Relationships between the KPIs
+- What additional data you need
+- The first three areas management should investigate
+
+Do not assume correlation means causation.
+
+Present your answer as a short COO briefing.
+
+-------------------------------
+Now upload the NovaTech CSV. Prompt + Enterprise Data = much more useful output.
+ 
+
+Act as a senior supply chain analytics consultant.
+
+Analyze the attached NovaTech supply chain dataset.
+
+Management is concerned because inventory is increasing while
+customer service is deteriorating.
+
+Analyze:
+
+1. OTIF by region
+2. OTIF by product category
+3. Supplier delivery performance
+4. Forecast error by category and SKU
+5. Stockout patterns
+6. Inventory concentration
+7. Lead-time patterns
+
+Identify the strongest evidence explaining the deterioration.
+
+Separate:
+FACTS FOUND IN DATA
+from
+POSSIBLE EXPLANATIONS.
+
+Then recommend the five areas management should investigate.
+
+For every conclusion, mention the metric or evidence supporting it.
+
+
+-------------------------------
+Procurement Copilot: Prompt engineering + procurement + managerial decision-making simultaneously.
+
+
+You are a procurement and supply chain advisor.
+We need to source 25,000 units.
+Supplier A:
+Price ₹950
+Lead time 14 days
+OTD 95%
+Capacity 15,000 units
+Supplier B:
+Price ₹900
+Lead time 30 days
+OTD 82%
+Capacity 30,000 units
+Supplier C:
+Price ₹1,020
+Lead time 10 days
+OTD 98%
+Capacity 12,000 units
+Current inventory coverage is 12 days.
+Customer OTIF target is 97%.
+
+Evaluate the sourcing options.
+Do not select a supplier based only on purchase price.
+Consider:
+- Cost
+- Lead time
+- Reliability
+- Capacity
+- Service risk
+Identify missing information that would materially affect the decision.
+Provide 3 possible sourcing strategies with their trade-offs.
+Present the final output as a table suitable for a procurement manager.
+
+-------------------------------
+Contract Analysis: upload a sample supplier contract. Analyze unstructured information.
+
+
+Act as a procurement contract analyst.
+
+Review the attached supplier agreement.
+
+Extract clauses relating to:
+
+- Price escalation
+- Delivery commitments
+- Late-delivery penalties
+- Minimum purchase quantities
+- Payment terms
+- Warranty
+- Termination
+- Force majeure
+- Liability
+- Intellectual property
+
+Create a table:
+
+Clause | Contract Provision | Business Impact | Risk/Issue | Question for Supplier
+
+Do not provide legal conclusions.
+Flag clauses that require legal or procurement review.
+
+Quote or reference the relevant section/page where possible.
+
+-------------------------------
+Supplier Negotiation Preparation: Use the previous procurement data.
+
+
+Act as a procurement negotiation coach.
+
+We are negotiating with Supplier B.
+
+Supplier B offers:
+Price: ₹900
+Lead time: 30 days
+OTD: 82%
+Capacity: 30,000 units
+Payment terms: Net 30
+
+Our priorities are:
+1. OTIF ≥97%
+2. Reduce supply risk
+3. Control total cost
+4. Avoid excessive inventory
+
+Prepare a negotiation strategy.
+
+Provide:
+
+OUR OBJECTIVES
+SUPPLIER'S LIKELY INTERESTS
+OUR LEVERAGE
+QUESTIONS TO ASK
+CONCESSIONS WE COULD OFFER
+CONCESSIONS WE SHOULD REQUEST
+WALK-AWAY ISSUES
+
+Also suggest 5 questions that could reveal hidden supply risk.
+
+-------------------------------
+Demand Planning Copilot
+
+
+Product A historical monthly demand:
+Jan 10,000
+Feb 10,500
+Mar 11,200
+Apr 11,800
+May 12,600
+Jun 13,500
+
+Next month's statistical forecast is 14,200.
+
+Additional information:
+
+A 10% price increase begins next month.
+A major customer promotion is planned.
+One large customer representing 15% of demand may delay orders.
+Festival season starts in two months.
+
+Act as a demand planning analyst.
+
+Evaluate the 14,200-unit forecast.
+
+Do NOT simply generate another number.
+
+Identify:
+- Factors supporting the forecast
+- Factors that could increase demand
+- Factors that could reduce demand
+- Information missing
+- Scenarios planners should model
+
+Create Base, Upside and Downside scenarios.
+Explain the assumptions behind each.
+
+-------------------------------
+Inventory Copilot
+
+
+You are an inventory optimization advisor.
+
+The CFO says:
+
+"Inventory has increased 22%, but stockouts have doubled.
+Reduce inventory by 20%."
+
+Sales says:
+
+"OTIF must increase from 92% to 97%."
+
+Explain why these objectives are not necessarily contradictory.
+
+Develop an analytical approach using:
+
+- ABC/XYZ segmentation
+- Forecast accuracy
+- Demand variability
+- Lead time
+- Supplier reliability
+- Safety stock
+- Inventory positioning
+- Service level
+
+Do not recommend a blanket 20% inventory reduction.
+
+Create a decision framework showing which inventory
+could potentially be reduced and where buffers may need to increase.
+
+-------------------------------
+Logistics Disruption
+
+
+You are a supply chain control tower analyst.
+A shipment containing critical components is delayed
+at port by 8 days.
+
+Affected customers:
+Customer A
+Revenue at risk: ₹1.8 Cr
+Inventory coverage: 2 days
+Strategic customer: Yes
+Customer B
+Revenue at risk: ₹90 lakh
+Inventory coverage: 12 days
+Strategic customer: No
+Customer C
+Revenue at risk: ₹1.2 Cr
+Inventory coverage: 5 days
+Strategic customer: Yes
+
+Air freight is available but costs 4x normal freight.
+Develop a response plan.
+Prioritize customers using:
+service risk,
+revenue exposure,
+inventory coverage,
+customer importance,
+and incremental logistics cost.
+Provide:
+1. Priority ranking
+2. Recommended response
+3. Reasoning
+4. Information still required
+5. Customer communication approach
+
+-------------------------------
+S&OP Copilot
+
+
+You are preparing the monthly Executive S&OP meeting.
+
+Demand forecast next quarter: +18%
+Available production capacity: +8%
+Supplier capacity for Component X: -15%
+Finished goods inventory: ₹85 Cr
+Target OTIF: 97%
+Current OTIF: 91%
+Finance requires working capital reduction of ₹10 Cr.
+
+Prepare a one-page Executive S&OP briefing.
+
+Include:
+
+DEMAND
+SUPPLY
+CAPACITY
+INVENTORY
+CUSTOMER SERVICE
+FINANCIAL IMPACT
+TOP 3 RISKS
+DECISIONS REQUIRED FROM MANAGEMENT
+
+Do not hide conflicts between objectives.
+
+Clearly state assumptions and missing information.
+
+-------------------------------
+Executive Communication
+
+
+Supplier C late again.
+Component X inventory only 5 days.
+North region OTIF down to 81%.
+Production line 2 running 90%.
+₹4.5 crore orders potentially delayed.
+Supplier B may provide 2,000 units but price 12% higher.
+Air freight possible.
+
+
+Convert these operational notes into a COO briefing.
+
+Use this format:
+
+SITUATION
+BUSINESS IMPACT
+ROOT CAUSE / HYPOTHESES
+IMMEDIATE ACTIONS
+DECISIONS REQUIRED
+NEXT 72 HOURS
+
+Maximum 200 words.
+
+Use executive language rather than technical jargon.
+
+Do not invent facts.
+
+-------------------------------
+
+
