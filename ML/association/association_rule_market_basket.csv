@@ -1,0 +1,501 @@
+Transaction_ID,Items_Purchased,Item_Count
+T0001,"Biscuits, Bread, Butter, Milk",4
+T0002,"Butter, Pasta, Tomato Sauce",3
+T0003,"Biscuits, Sugar, Tea",3
+T0004,"Bread, Butter, Milk, Pasta, Sugar, Yogurt",6
+T0005,"Biscuits, Bread, Dal, Milk, Yogurt",5
+T0006,"Bread, Butter, Cereal, Chips, Eggs, Juice, Milk",7
+T0007,"Butter, Cereal, Dal, Eggs, Pasta, Rice, Tomato Sauce",7
+T0008,"Bread, Sugar",2
+T0009,"Biscuits, Bread, Cereal, Eggs, Milk",5
+T0010,"Biscuits, Butter, Coffee, Sugar, Tea",5
+T0011,"Bread, Butter, Dal, Milk, Pasta, Sugar, Tomato Sauce",7
+T0012,"Biscuits, Butter, Dal, Tea, Tomato Sauce",5
+T0013,"Biscuits, Cheese, Chips, Juice, Sugar, Tomato Sauce",6
+T0014,"Apple, Bread, Butter, Cheese, Cooking Oil, Juice, Milk, Sugar",8
+T0015,"Cheese, Coffee, Sugar",3
+T0016,"Cereal, Chips, Juice, Milk",4
+T0017,"Eggs, Pasta, Tomato Sauce",3
+T0018,"Bread, Coffee, Dal, Eggs, Milk, Rice, Yogurt",7
+T0019,"Dal, Eggs, Juice, Rice",4
+T0020,"Cheese, Coffee, Cooking Oil",3
+T0021,"Chips, Dal, Juice",3
+T0022,"Bread, Dal, Rice, Sugar, Tomato Sauce",5
+T0023,"Apple, Butter, Cheese, Pasta, Tomato Sauce",5
+T0024,"Cereal, Chips, Dal, Juice, Milk, Pasta, Rice, Tea, Tomato Sauce",9
+T0025,"Milk, Pasta, Sugar, Tomato Sauce",4
+T0026,"Butter, Sugar",2
+T0027,"Biscuits, Butter, Juice, Sugar",4
+T0028,"Apple, Bread, Butter, Cheese, Milk, Pasta, Tomato Sauce",7
+T0029,"Bread, Butter, Eggs, Milk, Yogurt",5
+T0030,"Bread, Butter, Eggs, Milk",4
+T0031,"Biscuits, Bread, Butter, Milk, Sugar, Tea",6
+T0032,"Banana, Butter, Chips, Sugar",4
+T0033,"Bread, Pasta",2
+T0034,"Apple, Coffee, Yogurt",3
+T0035,"Bread, Butter, Cereal, Coffee, Milk",5
+T0036,"Apple, Bread, Butter, Cheese, Milk, Pasta, Tomato Sauce, Yogurt",8
+T0037,"Bread, Butter, Dal, Milk",4
+T0038,"Bread, Butter, Juice",3
+T0039,"Bread, Cereal, Milk, Sugar",4
+T0040,"Bread, Butter, Chips, Juice, Milk",5
+T0041,"Biscuits, Bread, Dal, Milk, Sugar, Tea",6
+T0042,"Banana, Bread, Butter, Eggs, Milk",5
+T0043,"Bread, Butter, Cheese, Cooking Oil, Milk, Sugar",6
+T0044,"Chips, Dal, Juice, Milk, Rice",5
+T0045,"Bread, Cheese, Chips, Eggs, Juice, Milk, Pasta, Tomato Sauce",8
+T0046,"Apple, Biscuits, Bread, Butter, Juice, Milk",6
+T0047,"Bread, Butter, Cheese, Dal, Milk",5
+T0048,"Bread, Chips, Eggs, Juice, Milk, Pasta, Yogurt",7
+T0049,"Bread, Butter, Cheese, Milk, Pasta, Tomato Sauce, Yogurt",7
+T0050,"Cooking Oil, Tea",2
+T0051,"Cheese, Pasta, Sugar, Yogurt",4
+T0052,"Coffee, Milk, Sugar, Yogurt",4
+T0053,"Biscuits, Cereal, Coffee, Eggs, Milk, Sugar",6
+T0054,"Cooking Oil, Dal, Milk, Pasta, Rice, Sugar, Tomato Sauce",7
+T0055,"Biscuits, Cooking Oil",2
+T0056,"Biscuits, Bread, Dal, Eggs, Milk, Pasta, Tomato Sauce",7
+T0057,"Bread, Chips, Juice, Milk, Yogurt",5
+T0058,"Bread, Butter, Cereal, Milk, Tomato Sauce",5
+T0059,"Butter, Cooking Oil, Yogurt",3
+T0060,"Chips, Dal, Eggs, Juice, Rice",5
+T0061,"Biscuits, Cheese, Pasta, Tea, Tomato Sauce, Yogurt",6
+T0062,"Bread, Chips, Dal, Juice, Milk, Rice, Tomato Sauce",7
+T0063,"Banana, Chips, Tea, Tomato Sauce",4
+T0064,"Butter, Dal, Juice, Rice",4
+T0065,"Bread, Butter, Dal, Milk, Rice, Sugar",6
+T0066,"Apple, Banana, Bread, Butter, Milk",5
+T0067,"Apple, Bread, Cereal, Chips, Milk",5
+T0068,"Bread, Milk, Sugar, Yogurt",4
+T0069,"Banana, Bread, Butter, Eggs, Milk, Pasta, Sugar, Tomato Sauce",8
+T0070,"Banana, Chips, Juice, Yogurt",4
+T0071,"Apple, Banana, Biscuits, Sugar, Tomato Sauce",5
+T0072,"Banana, Bread, Butter, Dal, Milk, Rice, Sugar",7
+T0073,"Cereal, Cheese, Sugar",3
+T0074,"Bread, Butter, Chips, Juice, Milk, Yogurt",6
+T0075,"Apple, Bread, Butter, Cereal, Chips, Milk, Tomato Sauce",7
+T0076,"Apple, Bread, Butter, Chips, Milk, Pasta, Sugar, Tomato Sauce",8
+T0077,"Banana, Cereal, Cheese, Coffee, Milk, Sugar",6
+T0078,"Banana, Biscuits, Bread, Butter, Cheese, Coffee, Milk, Sugar",8
+T0079,"Apple, Biscuits, Bread, Butter, Chips, Milk, Yogurt",7
+T0080,"Bread, Butter, Milk, Sugar",4
+T0081,"Bread, Butter, Cheese, Chips, Juice, Milk",6
+T0082,"Banana, Biscuits, Bread, Cooking Oil, Milk",5
+T0083,"Bread, Butter, Coffee, Milk, Rice, Sugar",6
+T0084,"Biscuits, Butter, Cereal, Eggs, Sugar, Tea",6
+T0085,"Bread, Butter, Milk, Tomato Sauce",4
+T0086,"Butter, Dal, Juice, Milk",4
+T0087,"Banana, Bread, Cheese, Cooking Oil, Eggs, Milk, Yogurt",7
+T0088,"Apple, Banana, Bread, Chips, Milk, Pasta, Tomato Sauce",7
+T0089,"Banana, Biscuits, Bread, Butter, Milk",5
+T0090,"Apple, Chips, Coffee, Dal, Juice, Milk, Sugar",7
+T0091,"Biscuits, Chips, Juice, Milk, Pasta, Tomato Sauce",6
+T0092,"Apple, Bread, Butter, Chips, Juice, Milk, Pasta, Sugar, Tomato Sauce",9
+T0093,"Bread, Butter, Cooking Oil, Dal, Milk, Rice, Tomato Sauce",7
+T0094,"Banana, Biscuits, Bread, Butter, Cooking Oil, Dal, Milk, Rice",8
+T0095,"Bread, Coffee, Milk, Pasta, Sugar, Tomato Sauce",6
+T0096,"Bread, Butter, Dal, Eggs, Milk, Rice, Sugar, Tea",8
+T0097,"Bread, Milk, Pasta, Tomato Sauce",4
+T0098,"Apple, Bread, Butter, Dal, Eggs, Juice, Milk, Rice",8
+T0099,"Apple, Butter, Cereal, Eggs, Tomato Sauce",5
+T0100,"Bread, Butter, Cheese, Dal, Milk, Rice, Tomato Sauce",7
+T0101,"Banana, Cereal, Chips, Juice, Milk, Sugar",6
+T0102,"Biscuits, Bread, Butter, Dal, Eggs, Rice, Tea, Tomato Sauce",8
+T0103,"Bread, Coffee, Milk, Sugar",4
+T0104,"Rice, Sugar",2
+T0105,"Biscuits, Bread, Butter, Milk, Sugar, Tea, Yogurt",7
+T0106,"Bread, Butter, Cheese, Coffee",4
+T0107,"Banana, Chips, Eggs, Juice, Rice",5
+T0108,"Banana, Bread, Butter, Dal, Yogurt",5
+T0109,"Chips, Milk, Tomato Sauce",3
+T0110,"Apple, Bread, Butter, Coffee, Sugar, Tomato Sauce",6
+T0111,"Apple, Bread, Butter, Chips, Cooking Oil, Milk, Yogurt",7
+T0112,"Apple, Cereal, Dal, Milk, Rice, Yogurt",6
+T0113,"Biscuits, Cereal, Dal, Eggs",4
+T0114,"Banana, Bread, Butter, Milk, Pasta, Tomato Sauce",6
+T0115,"Banana, Biscuits, Bread, Butter, Cheese, Tea",6
+T0116,"Milk, Sugar",2
+T0117,"Bread, Chips, Juice, Milk, Pasta, Yogurt",6
+T0118,"Apple, Cheese",2
+T0119,"Apple, Biscuits, Juice, Yogurt",4
+T0120,"Banana, Bread, Cheese, Milk, Pasta, Tomato Sauce",6
+T0121,"Biscuits, Bread, Butter, Milk, Yogurt",5
+T0122,"Apple, Dal, Milk, Rice, Tomato Sauce",5
+T0123,"Banana, Cereal, Cooking Oil, Dal, Pasta",5
+T0124,"Cereal, Milk, Sugar, Tomato Sauce",4
+T0125,"Apple, Cereal, Cheese, Milk, Tomato Sauce",5
+T0126,"Banana, Chips, Eggs, Juice",4
+T0127,"Bread, Butter, Cheese, Milk, Yogurt",5
+T0128,"Butter, Cereal, Chips, Dal, Juice",5
+T0129,"Apple, Bread, Butter, Milk, Pasta, Tomato Sauce",6
+T0130,"Butter, Eggs, Yogurt",3
+T0131,"Banana, Coffee",2
+T0132,"Bread, Butter, Dal, Milk",4
+T0133,"Juice, Sugar, Yogurt",3
+T0134,"Butter, Chips, Coffee, Sugar",4
+T0135,"Banana, Biscuits, Bread, Cheese, Milk, Sugar, Tomato Sauce",7
+T0136,"Banana, Butter, Coffee, Pasta, Rice, Tomato Sauce",6
+T0137,"Banana, Biscuits, Cereal, Dal, Milk, Rice, Tea",7
+T0138,"Biscuits, Bread, Cereal, Milk, Rice",5
+T0139,"Cooking Oil, Rice, Sugar, Tea, Tomato Sauce",5
+T0140,"Bread, Butter, Dal, Eggs, Rice",5
+T0141,"Butter, Dal, Rice",3
+T0142,"Cooking Oil, Juice, Pasta, Tomato Sauce",4
+T0143,"Apple, Biscuits, Dal, Rice",4
+T0144,"Banana, Bread, Butter, Milk",4
+T0145,"Bread, Butter, Cereal, Cooking Oil, Milk, Pasta, Tomato Sauce",7
+T0146,"Cereal, Cooking Oil, Eggs, Milk, Tomato Sauce",5
+T0147,"Banana, Butter, Chips, Juice, Sugar",5
+T0148,"Bread, Butter, Cheese, Dal, Eggs, Pasta, Rice, Tomato Sauce",8
+T0149,"Banana, Cheese, Cooking Oil, Pasta, Tomato Sauce, Yogurt",6
+T0150,"Biscuits, Bread, Butter, Chips, Cooking Oil, Juice, Milk, Yogurt",8
+T0151,"Bread, Butter, Cooking Oil, Eggs, Milk, Pasta, Tomato Sauce",7
+T0152,"Biscuits, Bread, Butter, Dal, Milk, Tea",6
+T0153,"Pasta, Tea, Tomato Sauce",3
+T0154,"Biscuits, Chips, Juice, Milk",4
+T0155,"Biscuits, Bread, Coffee, Milk, Pasta, Sugar, Tomato Sauce",7
+T0156,"Bread, Butter, Dal, Milk, Tomato Sauce",5
+T0157,"Apple, Banana, Butter, Eggs, Juice",5
+T0158,"Banana, Bread, Juice, Milk",4
+T0159,"Apple, Banana, Bread, Butter, Milk",5
+T0160,"Apple, Banana, Bread, Butter, Milk",5
+T0161,"Biscuits, Butter, Cheese",3
+T0162,"Banana, Cereal, Juice, Milk, Rice",5
+T0163,"Biscuits, Bread, Milk, Pasta, Tea",5
+T0164,"Chips, Dal, Eggs, Juice, Pasta, Tomato Sauce, Yogurt",7
+T0165,"Bread, Butter, Chips, Milk, Pasta, Tomato Sauce, Yogurt",7
+T0166,"Cooking Oil, Eggs, Tomato Sauce, Yogurt",4
+T0167,"Bread, Chips, Dal, Milk, Rice",5
+T0168,"Bread, Cooking Oil, Eggs, Milk, Pasta, Tomato Sauce",6
+T0169,"Biscuits, Bread, Chips, Juice, Milk, Pasta, Tomato Sauce",7
+T0170,"Cheese, Coffee, Sugar",3
+T0171,"Bread, Butter, Juice, Milk",4
+T0172,"Coffee, Cooking Oil, Dal, Rice, Sugar",5
+T0173,"Cheese, Coffee, Sugar",3
+T0174,"Banana, Biscuits",2
+T0175,"Banana, Biscuits, Chips, Juice, Tea, Yogurt",6
+T0176,"Apple, Bread, Butter, Dal, Juice, Milk, Rice, Tomato Sauce",8
+T0177,"Rice, Tea",2
+T0178,"Apple, Dal, Eggs, Milk",4
+T0179,"Cereal, Cheese, Pasta, Tomato Sauce",4
+T0180,"Bread, Butter, Cereal, Milk, Yogurt",5
+T0181,"Bread, Cereal, Eggs, Milk, Rice, Tomato Sauce, Yogurt",7
+T0182,"Bread, Butter, Cooking Oil, Eggs, Milk, Sugar, Yogurt",7
+T0183,"Cereal, Milk, Rice",3
+T0184,"Eggs, Juice",2
+T0185,"Bread, Butter, Cheese, Chips, Cooking Oil, Juice, Milk",7
+T0186,"Apple, Bread, Butter, Coffee, Milk, Sugar",6
+T0187,"Banana, Bread, Butter, Cheese, Dal, Milk",6
+T0188,"Bread, Butter, Cooking Oil, Juice, Milk, Tomato Sauce",6
+T0189,"Bread, Butter, Cooking Oil",3
+T0190,"Bread, Chips, Juice, Milk",4
+T0191,"Banana, Tomato Sauce",2
+T0192,"Apple, Cheese, Chips, Juice",4
+T0193,"Bread, Butter, Coffee, Juice, Milk, Sugar",6
+T0194,"Bread, Chips, Cooking Oil, Juice, Milk, Rice",6
+T0195,"Bread, Butter, Cereal, Dal, Eggs, Milk",6
+T0196,"Butter, Cheese, Dal",3
+T0197,"Butter, Cereal, Cheese, Dal, Milk, Rice",6
+T0198,"Butter, Juice, Yogurt",3
+T0199,"Bread, Butter, Cooking Oil, Milk, Rice",5
+T0200,"Biscuits, Bread, Butter, Cheese, Milk, Pasta, Sugar, Tea, Tomato Sauce",9
+T0201,"Cheese, Dal",2
+T0202,"Chips, Coffee, Juice, Sugar, Tomato Sauce",5
+T0203,"Banana, Bread, Butter, Chips, Milk, Rice",6
+T0204,"Banana, Bread, Butter, Cooking Oil, Milk, Tomato Sauce",6
+T0205,"Biscuits, Chips, Coffee, Juice, Sugar, Tea, Yogurt",7
+T0206,"Bread, Eggs, Juice, Milk, Pasta, Tomato Sauce",6
+T0207,"Butter, Sugar, Yogurt",3
+T0208,"Bread, Butter, Cereal, Milk, Yogurt",5
+T0209,"Dal, Eggs, Milk, Sugar",4
+T0210,"Bread, Butter, Cheese, Chips, Rice",5
+T0211,"Banana, Biscuits, Bread, Butter, Milk, Tomato Sauce",6
+T0212,"Bread, Butter, Chips, Eggs, Juice, Milk, Rice, Sugar, Tomato Sauce",9
+T0213,"Apple, Bread, Butter, Milk, Pasta, Tomato Sauce",6
+T0214,"Dal, Milk, Rice, Yogurt",4
+T0215,"Butter, Coffee, Cooking Oil, Juice, Sugar, Tomato Sauce",6
+T0216,"Apple, Bread, Butter, Cereal, Milk",5
+T0217,"Bread, Butter, Cooking Oil, Milk",4
+T0218,"Bread, Butter, Dal, Milk, Tomato Sauce",5
+T0219,"Apple, Banana, Chips, Coffee, Sugar",5
+T0220,"Biscuits, Bread, Butter, Chips, Juice, Pasta, Rice, Tea, Tomato Sauce",9
+T0221,"Bread, Dal, Milk, Rice, Tea",5
+T0222,"Cooking Oil, Yogurt",2
+T0223,"Apple, Bread, Cereal, Coffee, Dal, Juice, Milk, Sugar",8
+T0224,"Bread, Butter, Coffee, Dal, Milk, Rice, Sugar, Yogurt",8
+T0225,"Banana, Bread, Coffee, Cooking Oil, Sugar, Tomato Sauce",6
+T0226,"Biscuits, Bread, Butter, Cereal, Cooking Oil, Milk",6
+T0227,"Banana, Bread, Butter, Cheese, Milk",5
+T0228,"Bread, Cereal, Cheese, Cooking Oil, Milk",5
+T0229,"Cheese, Tomato Sauce",2
+T0230,"Biscuits, Dal, Eggs, Milk, Sugar",5
+T0231,"Biscuits, Cereal, Eggs, Juice, Milk, Pasta, Tomato Sauce",7
+T0232,"Apple, Biscuits, Cheese, Eggs, Tea",5
+T0233,"Butter, Chips, Cooking Oil, Dal, Rice",5
+T0234,"Bread, Butter, Cooking Oil, Juice, Milk, Sugar",6
+T0235,"Apple, Bread, Milk, Sugar",4
+T0236,"Bread, Butter, Cheese, Chips, Dal, Juice, Milk, Pasta, Rice, Tomato Sauce",10
+T0237,"Cheese, Dal",2
+T0238,"Banana, Cheese, Coffee, Cooking Oil, Juice, Sugar",6
+T0239,"Bread, Butter, Eggs, Juice, Milk",5
+T0240,"Cooking Oil, Dal, Juice, Rice, Sugar",5
+T0241,"Butter, Cheese, Pasta, Rice, Tomato Sauce",5
+T0242,"Bread, Butter, Coffee, Dal, Sugar",5
+T0243,"Milk, Tea, Tomato Sauce, Yogurt",4
+T0244,"Apple, Bread, Butter, Cereal, Dal, Milk, Rice, Sugar",8
+T0245,"Banana, Biscuits, Cheese, Dal, Pasta, Tea",6
+T0246,"Cereal, Cheese, Cooking Oil, Juice, Milk",5
+T0247,"Banana, Biscuits, Bread, Butter, Cheese, Eggs, Milk, Sugar",8
+T0248,"Chips, Coffee, Dal, Juice, Sugar, Yogurt",6
+T0249,"Apple, Banana, Juice",3
+T0250,"Apple, Butter, Cereal, Milk",4
+T0251,"Bread, Butter, Cooking Oil, Milk, Tomato Sauce",5
+T0252,"Bread, Butter, Dal, Eggs, Milk, Pasta, Rice, Tomato Sauce, Yogurt",9
+T0253,"Bread, Butter, Cereal, Milk",4
+T0254,"Bread, Butter, Cereal, Juice, Milk",5
+T0255,"Bread, Cheese, Eggs, Milk",4
+T0256,"Biscuits, Cheese, Cooking Oil, Pasta, Tea, Tomato Sauce",6
+T0257,"Cheese, Dal",2
+T0258,"Bread, Cheese, Chips, Dal, Juice, Milk, Tomato Sauce",7
+T0259,"Dal, Juice, Pasta, Tomato Sauce",4
+T0260,"Apple, Cooking Oil, Dal, Milk",4
+T0261,"Apple, Biscuits, Milk, Rice, Tomato Sauce",5
+T0262,"Apple, Bread, Milk, Tomato Sauce",4
+T0263,"Biscuits, Bread, Butter, Cheese, Eggs, Milk, Sugar, Tea",8
+T0264,"Apple, Juice, Yogurt",3
+T0265,"Bread, Butter, Cheese, Juice, Milk",5
+T0266,"Banana, Cereal, Coffee, Dal, Juice, Milk, Sugar",7
+T0267,"Apple, Bread, Butter, Chips, Milk, Sugar, Tea",7
+T0268,"Apple, Bread, Dal, Milk, Tea, Tomato Sauce",6
+T0269,"Cereal, Eggs, Milk, Pasta, Rice, Tomato Sauce",6
+T0270,"Bread, Butter, Chips, Rice",4
+T0271,"Biscuits, Bread, Chips, Juice, Milk, Pasta, Tea, Tomato Sauce",8
+T0272,"Bread, Eggs, Milk, Sugar",4
+T0273,"Cheese, Milk",2
+T0274,"Apple, Tomato Sauce, Yogurt",3
+T0275,"Bread, Butter, Dal, Rice",4
+T0276,"Coffee, Sugar, Yogurt",3
+T0277,"Apple, Bread, Cereal, Milk",4
+T0278,"Bread, Butter, Dal, Eggs, Milk, Rice",6
+T0279,"Banana, Biscuits, Cheese, Juice, Tea",5
+T0280,"Biscuits, Coffee, Dal, Milk, Rice",5
+T0281,"Butter, Cereal, Dal, Juice, Milk, Yogurt",6
+T0282,"Apple, Bread, Butter, Dal, Milk, Sugar",6
+T0283,"Biscuits, Chips, Dal, Juice, Milk, Rice",6
+T0284,"Banana, Bread, Milk, Rice",4
+T0285,"Bread, Butter, Cooking Oil, Dal, Eggs, Milk, Rice, Sugar",8
+T0286,"Apple, Pasta, Tea, Tomato Sauce, Yogurt",5
+T0287,"Banana, Juice",2
+T0288,"Bread, Butter, Eggs, Tomato Sauce",4
+T0289,"Bread, Cheese, Milk, Pasta, Tomato Sauce",5
+T0290,"Apple, Butter, Tomato Sauce",3
+T0291,"Banana, Bread, Butter, Cheese, Juice, Milk, Yogurt",7
+T0292,"Biscuits, Cereal, Dal, Milk, Rice, Tomato Sauce",6
+T0293,"Bread, Butter, Chips, Juice, Pasta, Tomato Sauce",6
+T0294,"Bread, Cereal, Cooking Oil, Milk, Yogurt",5
+T0295,"Cheese, Pasta, Tomato Sauce",3
+T0296,"Bread, Cereal, Juice, Milk, Pasta",5
+T0297,"Banana, Cereal, Milk, Pasta, Tomato Sauce, Yogurt",6
+T0298,"Bread, Eggs, Tea, Yogurt",4
+T0299,"Biscuits, Butter, Eggs, Tea",4
+T0300,"Bread, Butter, Milk, Sugar",4
+T0301,"Bread, Butter, Cheese, Juice",4
+T0302,"Dal, Rice, Sugar, Tomato Sauce",4
+T0303,"Biscuits, Bread, Milk, Rice, Yogurt",5
+T0304,"Apple, Bread, Butter, Milk, Pasta, Tomato Sauce, Yogurt",7
+T0305,"Bread, Butter, Cheese, Dal, Juice, Milk, Pasta, Tomato Sauce, Yogurt",9
+T0306,"Cheese, Rice, Sugar",3
+T0307,"Bread, Butter, Cereal, Cheese, Juice, Milk, Pasta, Tomato Sauce, Yogurt",9
+T0308,"Biscuits, Bread, Butter, Milk, Pasta, Tea",6
+T0309,"Biscuits, Bread, Milk, Pasta, Tea, Tomato Sauce",6
+T0310,"Biscuits, Chips, Tea",3
+T0311,"Biscuits, Cereal, Chips, Dal, Juice, Milk, Sugar, Tea",8
+T0312,"Apple, Banana, Bread, Cooking Oil, Juice, Milk",6
+T0313,"Bread, Chips, Cooking Oil, Dal, Juice, Milk, Tea, Yogurt",8
+T0314,"Biscuits, Bread, Cheese, Dal, Milk, Rice, Sugar, Tea",8
+T0315,"Apple, Banana, Biscuits, Bread, Milk, Tomato Sauce",6
+T0316,"Apple, Bread, Cheese, Milk, Pasta",5
+T0317,"Bread, Butter, Juice",3
+T0318,"Bread, Milk, Yogurt",3
+T0319,"Bread, Butter, Cheese, Milk",4
+T0320,"Apple, Chips, Juice",3
+T0321,"Biscuits, Bread, Chips, Juice, Milk, Rice",6
+T0322,"Bread, Butter, Chips, Eggs, Juice, Milk",6
+T0323,"Biscuits, Butter, Cereal, Cooking Oil, Milk",5
+T0324,"Butter, Rice, Sugar",3
+T0325,"Bread, Butter, Cereal, Milk",4
+T0326,"Butter, Coffee, Sugar",3
+T0327,"Bread, Eggs, Juice, Milk, Tomato Sauce",5
+T0328,"Biscuits, Bread, Butter, Chips, Juice, Milk, Tomato Sauce",7
+T0329,"Cereal, Cheese, Milk, Tomato Sauce",4
+T0330,"Bread, Cereal, Milk, Pasta, Tomato Sauce",5
+T0331,"Bread, Butter, Cooking Oil, Juice, Milk",5
+T0332,"Cereal, Dal, Milk",3
+T0333,"Apple, Banana, Cooking Oil, Sugar",4
+T0334,"Butter, Cereal, Coffee, Dal, Milk, Rice, Sugar, Yogurt",8
+T0335,"Bread, Butter, Cereal, Cooking Oil, Dal, Milk",6
+T0336,"Biscuits, Bread, Butter, Cheese, Eggs, Milk",6
+T0337,"Butter, Cooking Oil, Eggs, Milk, Pasta",5
+T0338,"Butter, Cereal, Milk, Rice, Yogurt",5
+T0339,"Coffee, Juice, Sugar, Tomato Sauce",4
+T0340,"Apple, Biscuits, Bread, Butter, Cheese, Dal, Milk, Rice",8
+T0341,"Apple, Biscuits, Butter, Cooking Oil, Sugar",5
+T0342,"Banana, Bread, Cheese, Eggs, Milk",5
+T0343,"Banana, Bread, Cereal, Chips, Dal, Milk",6
+T0344,"Biscuits, Bread, Butter, Dal, Milk, Rice, Tea",7
+T0345,"Biscuits, Cereal, Dal, Milk, Sugar, Tomato Sauce",6
+T0346,"Biscuits, Tea, Tomato Sauce",3
+T0347,"Banana, Bread, Butter, Milk, Tea",5
+T0348,"Apple, Biscuits, Cheese, Rice, Sugar",5
+T0349,"Apple, Banana, Butter, Cereal, Yogurt",5
+T0350,"Butter, Eggs, Pasta, Sugar, Tomato Sauce",5
+T0351,"Cereal, Milk, Tomato Sauce",3
+T0352,"Biscuits, Chips, Eggs, Juice, Milk, Sugar",6
+T0353,"Banana, Bread, Cereal, Cooking Oil, Milk",5
+T0354,"Apple, Bread, Butter, Cooking Oil, Milk",5
+T0355,"Bread, Butter, Cheese, Eggs, Milk",5
+T0356,"Apple, Bread, Butter, Cooking Oil, Juice, Milk",6
+T0357,"Bread, Butter, Dal, Eggs, Milk, Rice",6
+T0358,"Coffee, Juice, Sugar",3
+T0359,"Banana, Cereal, Coffee, Juice, Milk, Sugar",6
+T0360,"Banana, Bread, Milk, Tomato Sauce, Yogurt",5
+T0361,"Biscuits, Butter, Eggs",3
+T0362,"Bread, Butter, Cooking Oil, Dal, Milk, Tea",6
+T0363,"Bread, Cereal, Chips, Eggs, Milk, Tomato Sauce",6
+T0364,"Bread, Butter, Cheese, Chips, Juice, Milk, Tomato Sauce",7
+T0365,"Cereal, Cheese, Juice, Milk, Yogurt",5
+T0366,"Apple, Chips, Coffee, Juice, Pasta, Sugar, Tomato Sauce",7
+T0367,"Cooking Oil, Milk",2
+T0368,"Cereal, Juice, Milk, Pasta, Tomato Sauce",5
+T0369,"Apple, Bread, Butter, Coffee, Milk, Sugar",6
+T0370,"Apple, Banana, Tomato Sauce",3
+T0371,"Bread, Butter, Eggs, Milk, Tomato Sauce",5
+T0372,"Banana, Bread, Butter, Pasta, Tea, Tomato Sauce",6
+T0373,"Banana, Biscuits, Bread, Butter, Cooking Oil",5
+T0374,"Biscuits, Sugar, Tea",3
+T0375,"Cheese, Chips, Coffee, Yogurt",4
+T0376,"Biscuits, Bread, Chips, Coffee, Milk, Pasta, Sugar, Tomato Sauce",8
+T0377,"Cheese, Yogurt",2
+T0378,"Cheese, Chips, Sugar, Tomato Sauce",4
+T0379,"Apple, Biscuits, Bread, Cereal, Cheese, Milk, Yogurt",7
+T0380,"Cereal, Juice",2
+T0381,"Apple, Banana, Dal, Milk",4
+T0382,"Banana, Cooking Oil",2
+T0383,"Apple, Biscuits, Bread, Butter, Chips, Juice, Milk, Tea, Yogurt",9
+T0384,"Banana, Bread, Dal, Eggs, Milk, Tomato Sauce",6
+T0385,"Banana, Chips, Juice, Milk",4
+T0386,"Biscuits, Bread, Butter, Coffee, Milk, Rice, Sugar",7
+T0387,"Bread, Cereal, Dal, Milk, Rice",5
+T0388,"Biscuits, Bread, Butter, Milk, Tea",5
+T0389,"Chips, Dal, Eggs, Juice, Milk, Yogurt",6
+T0390,"Bread, Butter, Cereal, Eggs, Milk",5
+T0391,"Butter, Cheese, Chips, Juice, Milk",5
+T0392,"Banana, Biscuits, Cheese, Tea, Yogurt",5
+T0393,"Cheese, Eggs",2
+T0394,"Bread, Butter, Cheese, Cooking Oil, Dal, Milk, Sugar, Yogurt",8
+T0395,"Biscuits, Dal, Juice, Milk, Rice, Tea",6
+T0396,"Apple, Bread, Butter, Milk, Sugar",5
+T0397,"Juice, Milk",2
+T0398,"Cereal, Cheese, Cooking Oil, Milk, Yogurt",5
+T0399,"Biscuits, Bread, Butter, Chips, Milk, Tomato Sauce",6
+T0400,"Chips, Dal, Juice, Pasta, Rice, Tomato Sauce, Yogurt",7
+T0401,"Butter, Chips, Juice, Rice",4
+T0402,"Butter, Cereal, Rice, Tomato Sauce",4
+T0403,"Butter, Sugar",2
+T0404,"Banana, Bread, Milk",3
+T0405,"Cheese, Eggs, Milk",3
+T0406,"Apple, Cooking Oil, Juice",3
+T0407,"Biscuits, Cheese, Coffee, Cooking Oil, Sugar",5
+T0408,"Bread, Butter, Dal, Milk, Yogurt",5
+T0409,"Apple, Banana",2
+T0410,"Apple, Bread, Butter, Milk, Tomato Sauce",5
+T0411,"Bread, Butter, Eggs, Milk, Tomato Sauce",5
+T0412,"Bread, Butter, Milk, Sugar",4
+T0413,"Bread, Coffee, Pasta, Sugar, Tomato Sauce",5
+T0414,"Biscuits, Dal, Yogurt",3
+T0415,"Bread, Butter, Coffee, Eggs, Juice, Milk, Sugar",7
+T0416,"Banana, Bread, Butter, Dal, Milk, Pasta, Rice, Tomato Sauce",8
+T0417,"Banana, Chips, Cooking Oil, Juice, Sugar",5
+T0418,"Bread, Butter, Cheese, Milk, Pasta, Sugar, Tomato Sauce",7
+T0419,"Cereal, Chips, Dal, Juice, Milk",5
+T0420,"Apple, Bread, Butter, Yogurt",4
+T0421,"Bread, Butter, Juice, Milk, Sugar",5
+T0422,"Butter, Cheese, Eggs, Juice, Tomato Sauce",5
+T0423,"Bread, Butter, Cheese, Milk, Tomato Sauce, Yogurt",6
+T0424,"Banana, Bread, Butter, Cereal, Dal, Milk, Tomato Sauce",7
+T0425,"Bread, Butter, Cheese, Eggs, Milk",5
+T0426,"Banana, Biscuits, Bread, Butter, Cooking Oil, Eggs, Milk, Pasta, Tea, Tomato Sauce",10
+T0427,"Bread, Chips, Dal, Juice, Milk, Tea",6
+T0428,"Biscuits, Dal, Rice",3
+T0429,"Banana, Bread, Eggs, Milk, Pasta, Sugar, Tomato Sauce",7
+T0430,"Bread, Milk, Sugar",3
+T0431,"Biscuits, Bread, Butter, Chips, Milk, Tomato Sauce",6
+T0432,"Bread, Butter, Cheese, Dal, Eggs",5
+T0433,"Apple, Bread, Butter, Cereal, Chips, Juice, Milk, Yogurt",8
+T0434,"Bread, Dal, Rice, Sugar",4
+T0435,"Biscuits, Bread, Butter, Cereal, Milk",5
+T0436,"Cereal, Milk, Pasta, Tomato Sauce",4
+T0437,"Bread, Butter, Cereal, Cooking Oil, Dal, Juice, Milk, Tomato Sauce",8
+T0438,"Biscuits, Bread, Butter",3
+T0439,"Bread, Butter, Coffee, Eggs, Milk, Sugar, Tomato Sauce",7
+T0440,"Sugar, Tomato Sauce",2
+T0441,"Coffee, Cooking Oil, Dal, Sugar, Tomato Sauce",5
+T0442,"Cooking Oil, Tomato Sauce",2
+T0443,"Apple, Bread, Butter, Dal, Milk, Pasta, Rice, Tomato Sauce",8
+T0444,"Apple, Bread, Juice, Milk",4
+T0445,"Cheese, Coffee, Dal",3
+T0446,"Bread, Cheese, Milk, Pasta",4
+T0447,"Cereal, Cooking Oil, Milk",3
+T0448,"Apple, Cheese, Coffee, Sugar, Yogurt",5
+T0449,"Bread, Cereal, Coffee, Milk, Sugar, Tomato Sauce",6
+T0450,"Bread, Butter, Coffee, Dal, Sugar, Tomato Sauce",6
+T0451,"Bread, Butter, Cooking Oil, Dal, Milk, Sugar",6
+T0452,"Banana, Bread, Butter, Dal, Milk",5
+T0453,"Biscuits, Cooking Oil",2
+T0454,"Bread, Butter, Cereal, Milk",4
+T0455,"Apple, Cereal, Cooking Oil, Eggs, Tomato Sauce",5
+T0456,"Banana, Butter, Coffee, Sugar",4
+T0457,"Biscuits, Dal",2
+T0458,"Coffee, Dal, Sugar",3
+T0459,"Bread, Butter, Milk, Pasta",4
+T0460,"Coffee, Sugar, Yogurt",3
+T0461,"Bread, Butter, Dal, Eggs, Milk",5
+T0462,"Bread, Chips, Eggs, Juice, Milk, Rice, Sugar",7
+T0463,"Butter, Dal, Milk, Rice, Yogurt",5
+T0464,"Biscuits, Chips, Coffee, Eggs, Juice, Milk, Tea",7
+T0465,"Apple, Biscuits, Bread, Butter, Cereal, Chips, Juice, Milk",8
+T0466,"Banana, Biscuits, Chips, Sugar",4
+T0467,"Butter, Cooking Oil, Eggs",3
+T0468,"Bread, Butter, Cereal, Pasta, Sugar, Tomato Sauce",6
+T0469,"Apple, Bread, Butter, Dal, Milk, Rice, Sugar, Tomato Sauce",8
+T0470,"Banana, Coffee, Eggs, Sugar",4
+T0471,"Biscuits, Bread, Cheese, Milk, Tea",5
+T0472,"Biscuits, Chips, Dal",3
+T0473,"Butter, Cereal, Milk",3
+T0474,"Banana, Chips, Juice, Milk",4
+T0475,"Cheese, Eggs, Tomato Sauce",3
+T0476,"Dal, Pasta, Rice",3
+T0477,"Apple, Biscuits, Bread, Coffee, Milk, Sugar, Tomato Sauce",7
+T0478,"Bread, Cereal, Chips, Dal, Juice, Sugar",6
+T0479,"Apple, Biscuits, Dal, Eggs, Rice",5
+T0480,"Banana, Biscuits, Dal, Yogurt",4
+T0481,"Banana, Bread, Milk, Tea",4
+T0482,"Bread, Butter, Coffee, Juice, Milk, Sugar",6
+T0483,"Biscuits, Coffee, Sugar, Tea",4
+T0484,"Banana, Bread",2
+T0485,"Banana, Cereal, Cooking Oil, Juice, Milk",5
+T0486,"Cooking Oil, Sugar",2
+T0487,"Apple, Bread, Coffee, Cooking Oil, Juice, Milk, Pasta, Tomato Sauce",8
+T0488,"Bread, Cereal, Coffee, Milk, Sugar",5
+T0489,"Biscuits, Tea, Yogurt",3
+T0490,"Apple, Cheese",2
+T0491,"Biscuits, Sugar",2
+T0492,"Biscuits, Bread, Butter, Cereal, Cooking Oil, Milk, Yogurt",7
+T0493,"Cooking Oil, Eggs, Juice, Milk, Tomato Sauce",5
+T0494,"Apple, Bread, Butter, Dal, Eggs, Milk, Rice",7
+T0495,"Biscuits, Cheese, Dal, Rice, Tea",5
+T0496,"Apple, Bread, Butter, Cheese, Dal, Milk, Rice",7
+T0497,"Chips, Juice, Tomato Sauce",3
+T0498,"Apple, Cooking Oil, Pasta",3
+T0499,"Apple, Bread, Butter, Eggs, Milk, Rice",6
+T0500,"Bread, Butter, Dal, Milk, Sugar",5
