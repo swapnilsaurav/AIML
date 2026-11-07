@@ -1,0 +1,9 @@
+{
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "scikit_learn": "1.8.0",
+  "seed": 42,
+  "train_rows": 7500,
+  "test_rows": 2500,
+  "positive_rate": 0.6186
+}

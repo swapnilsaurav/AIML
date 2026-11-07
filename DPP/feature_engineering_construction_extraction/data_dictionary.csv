@@ -1,0 +1,41 @@
+column,dtype,description,missing_values
+customer_id,object,Unique ID; excluded,0
+age,int64,Age in years; irrelevant,0
+monthly_income,float64,"Monthly income, generic currency",104
+monthly_debt,float64,"Monthly debt payment, same currency",84
+tenure_months,int64,Tenure in months,0
+orders_90d,int64,Orders in past 90 days,0
+returns_90d,int64,Returned orders in past 90 days,0
+total_spend_90d,float64,Total spend in past 90 days,90
+spend_std_90d,float64,Spending standard deviation summary,102
+last_purchase_timestamp,object,Last purchase before snapshot,0
+feedback_text,object,Pre-snapshot feedback,0
+region,object,Region; irrelevant,0
+plan_type,object,Plan; irrelevant,0
+favorite_color,object,Color; irrelevant,0
+browser_type,object,Browser; irrelevant,0
+phone_type,object,Phone; irrelevant,0
+lucky_number,int64,Random lucky number; irrelevant,0
+income_copy,float64,Redundant income x 1.01,0
+constant_field,int64,Constant 1,0
+noise_01,float64,Independent normal noise; irrelevant,0
+noise_02,float64,Independent normal noise; irrelevant,0
+noise_03,float64,Independent normal noise; irrelevant,0
+noise_04,float64,Independent normal noise; irrelevant,0
+noise_05,float64,Independent normal noise; irrelevant,0
+noise_06,float64,Independent normal noise; irrelevant,0
+noise_07,float64,Independent normal noise; irrelevant,0
+noise_08,float64,Independent normal noise; irrelevant,0
+noise_09,float64,Independent normal noise; irrelevant,0
+noise_10,float64,Independent normal noise; irrelevant,0
+noise_11,float64,Independent normal noise; irrelevant,0
+noise_12,float64,Independent normal noise; irrelevant,0
+noise_13,float64,Independent normal noise; irrelevant,0
+noise_14,float64,Independent normal noise; irrelevant,0
+noise_15,float64,Independent normal noise; irrelevant,0
+noise_16,float64,Independent normal noise; irrelevant,0
+noise_17,float64,Independent normal noise; irrelevant,0
+noise_18,float64,Independent normal noise; irrelevant,0
+noise_19,float64,Independent normal noise; irrelevant,0
+noise_20,float64,Independent normal noise; irrelevant,0
+churn,int64,"Target: 1 churns, 0 stays",0
